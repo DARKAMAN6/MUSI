@@ -666,6 +666,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(
                     "• support", url=f"https://t.me/{GROUP_SUPPORT}"),
             ],
+        ]
     )
 
     await generate_cover(title, thumbnail, ctitle)
