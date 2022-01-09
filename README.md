@@ -22,7 +22,7 @@
 ### Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KennedyProject/KennedyXMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DARKAMAN6/DARK-MUSIC)
 
 ### Deploy On VPS 💙
 ```
