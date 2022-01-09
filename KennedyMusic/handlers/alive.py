@@ -27,7 +27,7 @@ from datetime import datetime
 from KennedyMusic.config import (
     BOT_NAME as bn,
     BOT_USERNAME,
-    BOT_IMG,
+    VENOM_IMG,
     ASSISTANT_NAME,
     OWNER_NAME,
     UPDATES_CHANNEL,
@@ -66,7 +66,7 @@ async def alive(client, message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
-        photo=f"{BOT_IMG}",
+        photo=f"{VENOM_IMG}",
         caption=f"""**{alv} Holla {message.from_user.mention()}, I'm {bn}.**
 
 {alv} **I'm Working Properly**
@@ -120,7 +120,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     delta_ping = time() - start
     await message.reply_photo(
-        photo=f"{ALIVE_IMG}",
+        photo=f"{VENOM_IMG}",
         caption=f"`〘 ♕ ᑭσɳց! ♕ 〙`\n" f"〘🔥`{delta_ping * 1000:.3f} ms`〙")
 
 
@@ -130,7 +130,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_photo(
-        photo=f"{ALIVE_IMG}",
+        photo=f"{VENOM_IMG}",
         caption=f"""**༎⃝💜𝐁𝐎𝐓 𝐒𝐓𝐀𝐓𝐔𝐒༎⃝➤ ✘\n**
  **༎⃝🔥𝐔𝐏𝐓𝐈𝐌𝐄༎⃝➤ ✘** `{uptime}`\n**
  **༎⃝🌺𝐒𝐓𝐀𝐑𝐓 𝐓𝐈𝐌𝐄༎⃝➤ ✘** `{START_TIME_ISO}`**""",
