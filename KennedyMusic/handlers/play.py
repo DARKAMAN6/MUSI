@@ -656,14 +656,14 @@ async def play(_, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("༎⃝✨𝐌𝐄𝐍𝐔༎⃝➤", callback_data="menu"),
-                InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="cls"),
+                InlineKeyboardButton("🖱️ Mᴇɴᴜ", callback_data="menu"),
+                InlineKeyboardButton("🗑️ Cʟᴏsᴇ", callback_data="cls"),
             ],
             [
                 InlineKeyboardButton(
-                    "༎⃝🌸𝐂𝐇𝐀𝐍𝐍𝐄𝐋༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
-                InlineKeyboardButton("༎⃝🌺 𝐒𝐔𝐏𝐏𝐎𝐑𝐓༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("🇮🇳 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
             ],
         ]
     ) 
