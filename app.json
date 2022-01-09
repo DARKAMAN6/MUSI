@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/719c3a1d0dc9a097844fc.jpg",
     "description": "KennedyX Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/KennedyProject/KennedyXMusic",
+    "repository": "https://github.com/DARKAMAN6/DARK-MUSIC",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
@@ -47,7 +47,8 @@
         "DATABASE_URL": {
             "description": "Fill with mongodb uri from mongodb.com",
             "required": true
-        },
+            "value": "mongodb+srv://DARKAMAN:DARKAMAN@cluster0.snqhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+      },
         "OWNER_ID": {
             "description": "your id",
             "required": true
