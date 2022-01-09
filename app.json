@@ -61,7 +61,7 @@
             "description": "Channel for log who's start your bot",
             "required": true
         },
-        "BOT_IMG": {
+        "VENOM_IMG": {
             "description": "For alive pic.",
             "required": false,
             "value": "https://telegra.ph/file/5f5f8e412644c47cc836a.jpg"
