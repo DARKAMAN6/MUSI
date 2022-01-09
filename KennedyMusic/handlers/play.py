@@ -709,8 +709,8 @@ async def play(_, message: Message):
         await _.send_photo(
             chid,
             photo="final.png",
-            caption=f"🏷 **Name:** [{title[:25]}]({url})\n⏱ **Duration:** `{duration}`\n💡 **Status:** `Playing`\n"
-            + f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"🏷 **𝙽𝙰𝙼𝙴 ☞︎︎︎** [{title[:25]}]({url})\n⏱ **𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 ☞︎︎︎** `{duration}`\n💡 **𝚂𝚃𝙰𝚃𝚄𝚂 ☞︎︎︎** `𝙿𝙻𝙰𝚈𝙸𝙽𝙶`\n" **⋆⃟ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃⋆⃟  ☞︎︎︎** `⋆⃟ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻⋆⃟ `\n"
+            + f"🎧 **𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝚈 ☞︎︎︎** {message.from_user.mention}",
             reply_markup=keyboard,
         )
         os.remove("final.png")
