@@ -666,9 +666,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(
                     "• support", url=f"https://t.me/{GROUP_SUPPORT}"),
             ],
-        ]
-    ),
-    disable_web_page_preview=True,
+    )
 
     await generate_cover(title, thumbnail, ctitle)
     file_path = await convert(download(url))
