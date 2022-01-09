@@ -23,6 +23,7 @@ from KennedyMusic.config import (
     GROUP_SUPPORT,
     THUMB_IMG,
     UPDATES_CHANNEL,
+    OWNER_NAME
     que,
 )
 from KennedyMusic.downloaders.youtube import download
@@ -715,7 +716,7 @@ async def play(_, message: Message):
         await _.send_photo(
             chid,
             photo="final.png",
-            caption=f"🏷 **𝙽𝙰𝙼𝙴 ☞︎︎︎** [{title[:25]}]({url})\n⏱ **𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 ☞︎︎︎** `{duration}`\n💡 **𝚂𝚃𝙰𝚃𝚄𝚂 ☞︎︎︎** `𝙿𝙻𝙰𝚈𝙸𝙽𝙶`\n" ** [⋆⃟ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃⋆⃟ ](https://t.me/{GROUP_SUPPORT}) ☞︎︎︎ [⋆⃟ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻⋆⃟ ](https://t.me/{UPDATES_CHANNEL})**\n"
+            caption=f"🏷 **𝙽𝙰𝙼𝙴 ☞︎︎︎** [{title[:25]}]({url})\n⏱ **𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 ☞︎︎︎** `{duration}`\n💡 **𝚂𝚃𝙰𝚃𝚄𝚂 ☞︎︎︎** `𝙿𝙻𝙰𝚈𝙸𝙽𝙶`\n" **⋆⃟ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃⋆⃟  ☞︎︎︎** `{}`\n"
             + f"🎧 **𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝚈 ☞︎︎︎** {message.from_user.mention}",
             reply_markup=keyboard,
         )
