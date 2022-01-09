@@ -2,11 +2,10 @@ from os import path
 import converter
 from callsmusic import callsmusic, queues
 from config import (
-    ALIVE_IMG,
+    VENOM_IMG,
     BOT_USERNAME,
     DURATION_LIMIT,
     GROUP_SUPPORT,
-    QUE_IMG,
     UPDATES_CHANNEL,
 )
 from handlers.play import convert_seconds
@@ -19,7 +18,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 @Client.on_message(command(["stream", f"stream@{BOT_USERNAME}"]) & other_filters)
-async def ghost(_, message: Message):
+async def venom(_, message: Message):
     costumer = message.from_user.mention
     lel = await message.reply_text("**༎⃝💔𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐈𝐍𝐆 𝐓𝐎 𝐆𝐇𝐎𝐒𝐓 𝐒𝐄𝐑𝐕𝐄𝐑𝐒༎⃝➤**")
 
