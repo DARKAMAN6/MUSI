@@ -82,12 +82,65 @@ async def alive(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
         )
     )
+
+@Client.on_message(filters.new_chat_members)
+async def new_chat(c: Client, m: Message):
+    ass_uname = (await user.get_me()).username
+    bot_id = (await c.get_me()).id
+    for member in m.new_chat_members:
+        if member.id == bot_id:
+            return await m.reply(
+                "❤️ **Thanks for adding me to the Group !**\n\n"
+                "**Promote me as administrator of the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.**\n\n"
+                "**Once done, type** /reload",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("📣 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("💭 𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url=f"https://t.me/{GROUP_SUPPORT}")
+                        ],
+                        [
+                            InlineKeyboardButton("👤 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"https://t.me/{ASSISTANT_NAME}")
+                        ]
+                    ]
+                )
+            )
+
+@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+async def ping_pong(client: Client, message: Message):
+    start = time()
+    delta_ping = time() - start
+    await message.reply_photo(
+        photo=f"{ALIVE_IMG}",
+        caption=f"`〘 ♕ ᑭσɳց! ♕ 〙`\n" f"〘🔥`{delta_ping * 1000:.3f} ms`〙")
+
+
+@Client.on_message(filters.command(["uptime", f"uptime@{BOT_USERNAME}"]))
+async def get_uptime(client: Client, message: Message):
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    await message.reply_photo(
+        photo=f"{ALIVE_IMG}",
+        caption=f"""**༎⃝💜𝐁𝐎𝐓 𝐒𝐓𝐀𝐓𝐔𝐒༎⃝➤ ✘\n**
+ **༎⃝🔥𝐔𝐏𝐓𝐈𝐌𝐄༎⃝➤ ✘** `{uptime}`\n**
+ **༎⃝🌺𝐒𝐓𝐀𝐑𝐓 𝐓𝐈𝐌𝐄༎⃝➤ ✘** `{START_TIME_ISO}`**""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "༎⃝🥀𝐔𝐏𝐃𝐀𝐓𝐄𝐒༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
+                   )
+                ]
+            ]
+        )
+    ) 
