@@ -23,7 +23,6 @@ from KennedyMusic.config import (
     GROUP_SUPPORT,
     THUMB_IMG,
     UPDATES_CHANNEL,
-    OWNER_NAME
     que,
 )
 from KennedyMusic.downloaders.youtube import download
