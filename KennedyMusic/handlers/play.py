@@ -658,6 +658,14 @@ async def play(_, message: Message):
             [
                 InlineKeyboardButton("༎⃝✨𝐌𝐄𝐍𝐔༎⃝➤", callback_data="menu"),
                 InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="cls")
+            ]
+            [
+                InlineKeyboardButton(
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+            ]
+            [
+                InlineKeyboardButton(
+                    "• support", url=f"https://t.me/{GROUP_SUPPORT}"
             ],
         ]
     )
