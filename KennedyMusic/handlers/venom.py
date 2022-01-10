@@ -1,6 +1,15 @@
-@Client.on_message(
-    filters.user(SUDO_USERS) & filters.command(["restart"], prefixes=f"{HNDLR}")
+import os
+import sys
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from KennedyMusic.config import (
+    BOT_USERNAME,
+    que,
 )
+
+@Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
+@sudo_users_only
+
 async def restart(client, m: Message):
     await m.delete()
     loli = await m.reply("𝟷")
