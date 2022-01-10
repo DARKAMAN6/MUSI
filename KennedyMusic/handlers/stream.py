@@ -3,20 +3,21 @@ from os import path
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from callsmusic import callsmusic, queues
+from KennedyMusic.callsmusic import callsmusic, queues
 
-import converter
-from downloaders import youtube
+from KennedyMusic.import converter
+from KennedyMusic.downloaders import youtube
 
-from config import (
+from KennedyMusic.config import (
     DURATION_LIMIT,
     UPDATES_CHANNEL,
     GROUP_SUPPORT,
     BOT_USERNAME,
+    VENOM_IMG
 )
-from handlers.play import convert_seconds
-from helpers.filters import command, other_filters
-from helpers.gets import get_url, get_file_name
+from KennedyMusic.handlers.play import convert_seconds
+from KennedyMusic.helpers.filters import command, other_filters
+from KennedyMusic.helpers.gets import get_url, get_file_name
 
 
 @Client.on_message(command(["stream", f"stream@{BOT_USERNAME}"]) & other_filters)
@@ -60,7 +61,7 @@ async def stream(_, message: Message):
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
-            photo="https://telegra.ph/file/36343b9d4742efe0b09cd.jpg",
+            photo=f"{VENOM_IMG}",
             caption=f"🏷 **Name:** [{title[:40]}](https://t.me/{GROUP_SUPPORT})\n⏱ **Duration:** `{duration}`\n🎧 **Request by:** {costumer}\n\n🔢 Track position »** `{position}`",
             reply_markup=keyboard,
         )
@@ -68,7 +69,7 @@ async def stream(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-            photo="https://telegra.ph/file/224178328de996a82507f.jpg",
+            photo=f"{VENOM_IMG}",
             caption=f"🏷 **Name:** [{title[:40]}](https://t.me/{GROUP_SUPPORT})\n⏱ **Duration:** `{duration}`\n💡 **Status:** `Playing`\n" \
                    +f"🎧 **Request by:** {costumer}",
             reply_markup=keyboard,
