@@ -1,6 +1,7 @@
 import os
 import sys
 from pyrogram import Client, filters
+from KennedyMusic.helpers.decorators import sudo_users_only
 from KennedyMusic.helpers.filters import command, other_filters
 from pyrogram.types import Message
 from KennedyMusic.config import (
