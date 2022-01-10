@@ -3,20 +3,20 @@ from os import path
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from kennedyMusic.import converter
-from callsmusic import callsmusic, queues
+from kennedyMusic.callsmusic import callsmusic, queues
 
-from downloaders import youtube
+from kennedyMusic.downloaders import youtube
 
-from config import (
+from kennedyMusic.config import (
     DURATION_LIMIT,
     UPDATES_CHANNEL,
     GROUP_SUPPORT,
     BOT_USERNAME,
     VENOM_IMG,
 )
-from handlers.play import convert_seconds
-from helpers.filters import command, other_filters
-from helpers.gets import get_url, get_file_name
+from kennedyMusic.handlers.play import convert_seconds
+from kennedyMusic.helpers.filters import command, other_filters
+from kennedyMusic.helpers.gets import get_url, get_file_name
 
 
 @Client.on_message(command(["stream", f"stream@{BOT_USERNAME}"]) & other_filters)
