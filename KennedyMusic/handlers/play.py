@@ -328,7 +328,6 @@ async def m_cb(b, cb):
 
     elif type_ == "puse":
         spn = "⏸ music playback has paused"
-        ACTV_CALLS = []
         for x in callsmusic.pytgcalls.active_calls:
             ACTV_CALLS(int(x.chat_id))
         if int(chat_id) not in ACTV_CALLS:
