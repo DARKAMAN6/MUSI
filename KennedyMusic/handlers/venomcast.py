@@ -8,8 +8,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
 
-from callsmusic.callsmusic import client as Bot
-from config import SUDO_USERS
+from KennedyMusic.callsmusic.callsmusic import client as Bot
+from KennedyMusic.config import SUDO_USERS
 
 @Client.on_message(filters.command(["dcast"]))
 async def dcast(_, message: Message):
