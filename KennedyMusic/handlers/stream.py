@@ -2,10 +2,10 @@ from os import path
 
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-
+from kennedyMusic.import converter
 from KennedyMusic.callsmusic import callsmusic, queues
 
-from KennedyMusic.converter import convert
+from KennedyMusic.converter.converter import convert
 from KennedyMusic.downloaders import youtube
 
 from KennedyMusic.config import (
