@@ -62,15 +62,20 @@
             "description": "Channel for log who's start your bot",
             "required": true
         },
-        "BOT_IMG": {
+        "VENOM_IMG": {
             "description": "For alive pic.",
             "required": false,
-            "value": "https://telegra.ph/file/5f5f8e412644c47cc836a.jpg"
+            "value": "https://te.legra.ph/file/906820ed9b4e55ab6da1f.jpg"
+        },
+        "ALIVE_IMG": {
+            "description": "For alive pic.",
+            "required": false,
+            "value": "https://te.legra.ph/file/906820ed9b4e55ab6da1f.jpg"
         },
         "THUMB_IMG": {
             "description": "For image on results.",
             "required": false,
-            "value": "https://telegra.ph/file/2721b32485a6001bec390.jpg"
+            "value": "https://te.legra.ph/file/906820ed9b4e55ab6da1f.jpg"
         },
         "ASSISTANT_NAME": {
             "description": "Fill with your assistant username without @",
