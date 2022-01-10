@@ -59,8 +59,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Channel for log who's start your bot",
-            "required": false
-            "value":"-123456789"
+            "required": true
         },
         "VENOM_IMG": {
             "description": "For alive pic.",
