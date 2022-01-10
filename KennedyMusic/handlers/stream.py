@@ -1,5 +1,5 @@
 from os import path
-import KennedyMusic.converter
+import KennedyMusic.converter as convert
 from KennedyMusic.callsmusic import callsmusic, queues
 from KennedyMusic.config import (
     VENOM_IMG,
@@ -11,7 +11,6 @@ from KennedyMusic.config import (
 from KennedyMusic.handlers.play import convert_seconds
 from KennedyMusic.helpers.filters import command, other_filters
 from KennedyMusic.helpers.gets import get_file_name
-from KennedyMusic.import converter.convert
 from pyrogram import Client
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
