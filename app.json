@@ -3,16 +3,16 @@
     "logo": "https://telegra.ph/file/719c3a1d0dc9a097844fc.jpg",
     "description": "KennedyX Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/DARKAMAN6/DARK-MUSIC",
+    "repository": "https://github.com/KennedyProject/KennedyXMusic",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
             "description": "fill with string Pyogram (P)",
-            "required": true,
+            "required": true
         },
         "BOT_TOKEN": {
             "description": "Your bot token from @BotFather",
-            "required": true,
+            "required": true
         },
         "BOT_NAME": {
             "description": "Your musicplayer name.",
@@ -46,21 +46,20 @@
         },
         "DATABASE_URL": {
             "description": "Fill with mongodb uri from mongodb.com",
-            "required": true,
-            "value": "mongodb+srv://DARKAMAN:DARKAMAN@cluster0.snqhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-      },
+            "required": true
+        },
         "OWNER_ID": {
             "description": "your id",
-            "required": true,
+            "required": true
         },
         "BROADCAST_AS_COPY": {
             "description": "if you don't know about this leave this on default value",
             "required": false,
-            "value": "true"
+            "value": "True"
         },
         "LOG_CHANNEL": {
             "description": "Channel for log who's start your bot",
-            "required": true,
+            "required": true
         },
         "VENOM_IMG": {
             "description": "For alive pic.",
@@ -94,15 +93,15 @@
         },
         "API_ID": {
             "description": "APP ID from my.telegram.org",
-            "required": true,
+            "required": true
         },
         "API_HASH": {
             "description": "API HASH from my.telegram.org",
-            "required": true,
+            "required": true
         },
         "SUDO_USERS": {
             "description": "Fill with ID who you made a admin for bot (separate with space).",
-            "required": true,
+            "required": true
         },
         "DURATION_LIMIT": {
             "description": "Duration limit for your musicplayer (in minutes).",
