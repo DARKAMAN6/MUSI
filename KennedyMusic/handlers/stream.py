@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from KennedyMusic.callsmusic import callsmusic, queues
 
-import KennedyMusic.converter
+from KennedyMusic.converter import convert
 from KennedyMusic.downloaders import youtube
 
 from KennedyMusic.config import (
