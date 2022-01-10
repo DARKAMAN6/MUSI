@@ -1,5 +1,5 @@
 from os import path
-import converter
+import KennedyMusic.converter
 from KennedyMusic.callsmusic import callsmusic, queues
 from KennedyMusic.config import (
     VENOM_IMG,
