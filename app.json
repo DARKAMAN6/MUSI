@@ -42,7 +42,7 @@
         "UPSTREAM_REPO": {
             "description": "If you forking, put your link on this value. if you not forking LEAVE THIS ONE!",
             "required": false,
-            "value": "https://github.com/KennedyProject/KennedyXMusic"
+            "value": "https://github.com/DARKAMAN6/DARK-MUSIC"
         },
         "DATABASE_URL": {
             "description": "Fill with mongodb uri from mongodb.com",
