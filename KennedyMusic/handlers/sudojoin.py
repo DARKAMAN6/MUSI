@@ -5,14 +5,12 @@ from KennedyMusic.config import (
 from pyrogram import Client, filters
 from KennedyMusic.helpers.decorators import sudo_users_only
 from pyrogram.errors import UserAlreadyParticipant
-from KennedyMusic.helpers.decorators import authorized_users_only
 from KennedyMusic.helpers.filters import command, other_filters
 from KennedyMusic.helpers.chattitle import CHAT_TITLE
 from KennedyMusic.callsmusic.callsmusic import client as USER
 
 
 @Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
-@authorized_users_only
 @sudo_users_only
 async def join(client, message):
     chat_id = message.chat.id
