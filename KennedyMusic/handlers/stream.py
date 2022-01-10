@@ -11,7 +11,6 @@ from KennedyMusic.config import (
 from KennedyMusic.handlers.play import convert_seconds
 from KennedyMusic.helpers.filters import command, other_filters
 from KennedyMusic.helpers.gets import get_file_name
-from KennedyMusic.converter.converter.convert.import convert
 from pyrogram import Client
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
@@ -47,7 +46,7 @@ async def stream(_, message: Message):
     title = audio.title
     file_name = get_file_name(audio)
     duration = convert_seconds(audio.duration)
-    file_path = await converter.convert(
+    file_path = await KennedyMusic.converter.convert(
         (await message.reply_to_message.download(file_name))
         if not path.isfile(path.join("downloads", file_name))
         else file_name
