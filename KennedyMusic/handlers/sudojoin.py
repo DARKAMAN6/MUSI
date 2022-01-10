@@ -1,14 +1,14 @@
-from config import (
+from KennedyMusic.config import (
     BOT_USERNAME,
     que,
 )
 from pyrogram import Client, filters
-from helpers.decorators import sudo_users_only
+from KennedyMusic.helpers.decorators import sudo_users_only
 from pyrogram.errors import UserAlreadyParticipant
-from helpers.decorators import authorized_users_only
-from helpers.filters import command, other_filters
-from helpers.chattitle import CHAT_TITLE
-from callsmusic.callsmusic import client as USER
+from KennedyMusic.helpers.decorators import authorized_users_only
+from KennedyMusic.helpers.filters import command, other_filters
+from KennedyMusic.helpers.chattitle import CHAT_TITLE
+from KennedyMusic.callsmusic.callsmusic import client as USER
 
 
 @Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
