@@ -13,7 +13,7 @@ from KennedyMusic.config import (
     UPDATES_CHANNEL,
     GROUP_SUPPORT,
     BOT_USERNAME,
-    VENOM_IMG
+    VENOM_IMG,
 )
 from KennedyMusic.handlers.play import convert_seconds
 from KennedyMusic.helpers.filters import command, other_filters
