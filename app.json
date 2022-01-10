@@ -1,7 +1,7 @@
 {
-    "name": "Dark Music",
+    "name": "VENOM MUSIC",
     "logo": "https://telegra.ph/file/719c3a1d0dc9a097844fc.jpg",
-    "description": "KennedyX Music allow you to stream music trought the telegram voice chat feature.",
+    "description": "VENOM Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
     "repository": "https://github.com/DARKAMAN6/DARK-MUSIC",
     "stack": "container",
@@ -22,7 +22,7 @@
         "BOT_USERNAME": {
             "description": "Fill with your bot username without @",
             "required": true,
-            "value": "EmiexRobot"
+            "value": "DARKV2MUSICBOT"
         },
         "U_BRANCH": {
             "description": "This branch the repo DON'T CHANGE!",
