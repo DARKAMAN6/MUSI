@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/719c3a1d0dc9a097844fc.jpg",
     "description": "KennedyX Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/KennedyProject/KennedyXMusic",
+    "repository": "https://github.com/DARKAMAN6/DARK-MUSIC",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
@@ -59,7 +59,8 @@
         },
         "LOG_CHANNEL": {
             "description": "Channel for log who's start your bot",
-            "required": true
+            "required": false
+            "value":"-123456789"
         },
         "VENOM_IMG": {
             "description": "For alive pic.",
@@ -74,7 +75,7 @@
         "ASSISTANT_NAME": {
             "description": "Fill with your assistant username without @",
             "required": true,
-            "value": "emiexhelper"
+            "value": "VENOM ASSISTANT"
         },
         "BG_IMAGE": {
             "description": "For background image if you playing",
@@ -84,12 +85,12 @@
         "ALIVE_EMOJI": {
             "description": "for emoji in /alive command",
             "required": false,
-            "value": ""
+            "value": "🇮🇳"
         },
         "OWNER_NAME": {
             "description": "Fill with your username account without @",
             "required": false,
-            "value": "xxskfi"
+            "value": "R0Y41_KING"
         },
         "API_ID": {
             "description": "APP ID from my.telegram.org",
@@ -116,12 +117,12 @@
         "UPDATES_CHANNEL": {
             "description": "Fill with your channel username without @, if you haven't one you can leave it default",
             "required": false,
-            "value": "KennedyProject"
+            "value": "DARKAMANCHANNEL"
         },
         "GROUP_SUPPORT": {
             "description": "Fill with your group username without @, if your haven't one you can leave it default",
             "required": false,
-            "value": "emikosupport"
+            "value": "DARKAMANSUPPORT"
         }
     },
     "buildpacks": [
