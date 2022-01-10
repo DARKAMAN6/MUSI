@@ -47,6 +47,7 @@
         "DATABASE_URL": {
             "description": "Fill with mongodb uri from mongodb.com",
             "required": true
+            "value":"mongodb+srv://DARKAMAN:DARKAMAN@cluster0.snqhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         },
         "OWNER_ID": {
             "description": "your id",
