@@ -7,7 +7,7 @@ from KennedyMusic.config import (
     que,
 )
 
-@Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & other_filters)
 @sudo_users_only
 
 async def restart(client, m: Message):
