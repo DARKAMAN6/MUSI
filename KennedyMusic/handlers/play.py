@@ -42,7 +42,7 @@ from youtube_search import YoutubeSearch
 
 DISABLED_GROUPS = []
 useer = "NaN"
-
+ACTV_CALLS = []
 
 def cb_admin_check(func: Callable) -> Callable:
     async def decorator(client, cb):
