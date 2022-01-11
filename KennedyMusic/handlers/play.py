@@ -563,7 +563,7 @@ async def play(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("**🔥𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝙺𝙴𝙽 𝙺𝙴𝙽𝙴𝙺𝙸 𝚂𝙴𝚁𝚅𝙴𝚁𝚂🔥**")
+    lel = await message.reply("**🔥𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝙰𝙻𝙴𝚇𝙰 𝚂𝙴𝚁𝚅𝙴𝚁𝚂🔥**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -616,7 +616,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("**✨𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝙺𝙴𝙽 𝙺𝙴𝙽𝙴𝙺𝙸 𝚂𝙴𝚁𝚅𝙴𝚁𝚂✨**")
+    await lel.edit("**✨𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝙰𝙻𝙴𝚇𝙰 𝚂𝙴𝚁𝚅𝙴𝚁𝚂✨**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
